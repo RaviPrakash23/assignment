@@ -1,0 +1,15 @@
+<h4><small>step03 - Adding Hobbies</small></h4>
+<hr>
+<form (submit)="addHobby(hobby.value)">
+    <div>
+      <label for="hobby">Hobby:</label>
+      <input type="text" #hobby>
+      <button class="btn btn-success" type="submit">Add Hobby</button>
+    </div>
+  </form>
+  <hr/>
+  <ul class="list-group">
+      <li *ngFor="let hobby of hobbies, let i = index" class="list-group-item">
+        {{i + 1}} {{hobby}} <a (click)="deleteHobby(hobby)" class="btn btn-warning badge">X</a>
+    </li>
+  </ul>

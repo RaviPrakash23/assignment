@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+body{background: #0c7cd5;}
+.row.content {height: 660px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height: auto;} 
+}
+section{margin: 15px; padding: 10px;}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small{
+    color: #2196f3;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #2196f3;
+    color: #f1f1f1;
+}
+textarea, textarea.form-control, input.form-control, input[type=text], input[type=password], input[type=email], input[type=number], [type=text].form-control, [type=password].form-control, [type=email].form-control, [type=tel].form-control, [contenteditable].form-control{
+    border: 1px solid #f1f1f1; padding: 2px 5px;
+}
+.list-group-item > .badge {
+    float: right; border: transparent;
+    background-color: #FF0000;
+}
+
+element.style {
+}
+bootstrap.min.css:11
+.navbar {
+    border: none;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+bootstrap.min.css:11
+.navbar-inverse {
+    background-color: #2196f3;
+    border-color: transparent;
+}
+.navbar {margin-bottom: 0;}
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  }

@@ -1,0 +1,106 @@
+<div class="row">
+    <div class="col-sm-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Step01.1 - One way data binding</h3>
+            </div>
+            <div class="panel-body">
+                <div class="well well-sm">
+                    Name: {{name}}
+                  </div>
+                <ul>
+                    <li>Age: {{age}}</li>
+                    <li>Email: {{email}}</li>
+                    <li>Address: {{address.street}}, {{address.city}}, {{address.state}}</li>
+                  </ul>
+            </div>
+          </div>        
+    </div>
+    <div class="col-sm-6">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Step01.2 - Two way data binding</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3 text-right"><label for="name">Name:</label></div>
+                        <div class="col-sm-9"><input class="form-control" type="text" [(ngModel)] = "name" name="name"></div>
+                  </div>
+                </div>
+        
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3 text-right"><label for="age">Age:</label></div>
+                        <div class="col-sm-9"><input class="form-control" type="number" [(ngModel)] = "age" name="age"></div>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3 text-right"><label for="email">Email:</label></div>
+                        <div class="col-sm-9"><input class="form-control" type="text" [(ngModel)] = "email" name="email"></div>
+                  </div>
+                </div>
+        
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3 text-right"><label for="street">Street:</label></div>
+                        <div class="col-sm-9"><input class="form-control" type="text" [(ngModel)] = "address.street" name="street"></div>
+                  </div>
+                </div>
+        
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3 text-right"><label for="city">City:</label></div>
+                        <div class="col-sm-9"><input class="form-control" type="text" [(ngModel)] = "address.city" name="city"></div>
+                  </div>
+                </div>
+        
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3 text-right"><label for="state">State:</label></div>
+                        <div class="col-sm-9"><input class="form-control" type="text" [(ngModel)] = "address.state" name="state"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+</div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-sm-6">
+
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title">Step01.3 - Get the array values by ngFor loop</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><h5>Hobbies</h5></li>
+                    <li *ngFor="let hobby of hobbies, let i = index">
+                      {{i + 1}} {{hobby}}
+                  </li>
+                </ul>
+            </div>
+          </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Step01.4 - usage of ngIf - click button show/hide div panel</h3>
+            </div>
+            <div class="panel-body">
+                <button class="btn btn-primary" (click)="togglePanel()">Show Hide Panel</button>
+                <br/><br/>
+                <div class="panel panel-default" *ngIf="isShow">
+                    <div class="panel-body">
+                        Show Hide panel
+                    </div>
+                  </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+    

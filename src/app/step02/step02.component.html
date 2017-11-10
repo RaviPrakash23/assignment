@@ -1,0 +1,7 @@
+<h4><small>step02 - Get the data from Json API By Http service</small></h4>
+<hr>
+<div *ngFor="let post of posts, let i = index">
+    <h5>{{post.id}}. {{post.title | uppercase}} </h5>
+    <p> {{post.body}} </p>
+
+</div>

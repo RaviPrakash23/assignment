@@ -1,0 +1,18 @@
+<h4><small>step04 - Accordion</small></h4>
+<hr>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-primary" *ngFor="let post of posts, let i = index">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+              {{post.id}}. <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{post.id}}">
+                {{post.title | uppercase}}
+            </a>
+          </h4>
+        </div>
+        <div id="collapse{{post.id}}" class="panel-collapse collapse">
+          <div class="panel-body">
+              {{post.body}}
+          </div>
+        </div>
+      </div>
+    </div> 
