@@ -24,7 +24,7 @@ export class Step01Component implements OnInit {
       city: 'Hyderabad',
       state: 'Telangana'
     }
-    this.hobbies = ['Cricket', 'Carams', 'Tabel Tannis', 'watching Movies'];
+    this.hobbies = ['Cricket', 'carroms', 'Table Tennis', 'Watching Movies'];
   }
   onClick() {
     console.log('On click of Hello');
