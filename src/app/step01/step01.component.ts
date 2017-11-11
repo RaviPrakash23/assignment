@@ -20,7 +20,7 @@ export class Step01Component implements OnInit {
     this.age = 40;
     this.email = 'yravi.ui@gmail.com';
     this.address = {
-      street: '50, HMT Layout',
+      street: 'VVN Colony, Kukatpally',
       city: 'Hyderabad',
       state: 'Telangana'
     }
