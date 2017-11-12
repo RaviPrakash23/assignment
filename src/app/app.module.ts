@@ -11,6 +11,7 @@ import { Step03Component } from './step03/step03.component';
 import { Step04Component } from './step04/step04.component';
 
 import { DataService } from './data.service';
+import { OthersComponent } from './others/others.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { DataService } from './data.service';
     Step01Component,
     Step02Component,
     Step03Component,
-    Step04Component
+    Step04Component,
+    OthersComponent
   ],
   imports: [
     BrowserModule,

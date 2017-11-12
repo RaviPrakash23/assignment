@@ -8,8 +8,13 @@ body{background: #0c7cd5;}
   background-color: #f1f1f1;
   height: 100%;
 }
-
-
+.navbar-brand{
+    position: relative; bottom: 10px; height: 40px;
+}
+.navbar-brand img{
+    height: 40px;
+}
+.demoHead{margin-top: 0; color:#FFF; text-shadow: 1px 1px #999;}
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
   .sidenav {
